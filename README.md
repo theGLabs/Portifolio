@@ -33,4 +33,4 @@ sobre.html
 
 ## 🎯 Objetivo
 
-Praticar desenvolvimento front-end criando um site completo com interface, interatividade e
+Praticar desenvolvimento front-end criando um site completo com interface, interatividade e organização de arquivos, simulando um projeto real de uma cafeteria.
