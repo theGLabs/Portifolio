@@ -1,0 +1,431 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Café Guilado</title>
+
+<link rel="stylesheet" href="css/cardapio.css">
+<link rel="stylesheet" href="css/login.css">
+
+<script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+
+</head>
+
+
+<body>
+
+
+<!-- NAVBAR -->
+
+<nav>
+
+<img src="fotos/logos/Logo do Café Guilado vintage (1).png" class="logo">
+
+<ul>
+<li><a href="index.html">Início</a></li>
+<li><a href="cardapio.html">Cardápio</a></li>
+<li><a href="sobre.html">Sobre</a></li>
+</ul>
+
+<div class="icons">
+
+<span id="login">
+<img src="fotos/download.svg" alt="usuário">
+</span>
+
+<div class="cart-icon">
+<span id="cart">
+<img src="fotos/bag.svg" alt="carrinho">
+</span>
+<span id="cart-count">0</span>
+</div>
+
+</div>
+
+</nav>
+
+
+
+<!-- LOGIN -->
+
+<div id="login-panel">
+
+<div class="login-box" id="login-box">
+
+<button id="close-login">✕</button>
+
+<h2>Entrar</h2>
+
+<input type="email" placeholder="Email">
+<input type="password" placeholder="Senha">
+
+<div class="login-links">
+<button id="forgot-link">Esqueceu a senha?</button>
+<button id="signup-link">Criar conta</button>
+</div>
+
+<button class="login-btn">Entrar</button>
+
+</div>
+
+
+
+<div id="signup-panel">
+
+<div class="login-box">
+
+<button class="close-signup">✕</button>
+
+<h2>Criar conta</h2>
+
+<input type="email" placeholder="Email">
+<input type="password" placeholder="Senha">
+<input type="password" placeholder="Confirmar senha">
+
+<button class="login-btn">Criar conta</button>
+
+<p class="back-login">
+Já tem conta? <span>Entrar</span>
+</p>
+
+</div>
+
+</div>
+
+
+
+<div id="reset-panel">
+
+<div class="login-box">
+
+<button class="close-reset">✕</button>
+
+<h2>Recuperar senha</h2>
+
+<input type="email" placeholder="Digite seu email">
+
+<button class="login-btn">Enviar recuperação</button>
+
+<p class="back-login">
+Voltar para <span>login</span>
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+
+
+<!-- CARRINHO -->
+
+<div id="cart-panel">
+
+<div class="cart-header">
+<span>CARRINHO</span>
+<button id="close-cart">✕</button>
+</div>
+
+<div id="cart-items"></div>
+
+<div class="cart-total">
+Total: R$ <span id="total">0</span>
+</div>
+
+</div>
+
+
+
+<!-- CARDÁPIO -->
+
+<section id="cardapio">
+
+
+<h1>Cafés</h1>
+
+<ul>
+
+<li>
+
+<img src="fotos/cardapio/cafes/nathan-dumlao-l59fmhtprIE-unsplash.jpg">
+
+Café Expresso
+
+<p>R$ 3,00</p>
+
+<button class="comprar" data-nome="Café Expresso" data-preco="3">
+Comprar
+</button>
+
+</li>
+
+
+<li>
+
+<img src="fotos/cardapio/cafes/cafe com leite.png">
+
+Café com Leite
+
+<p>R$ 4,00</p>
+
+<button class="comprar" data-nome="Café com Leite" data-preco="4">
+Comprar
+</button>
+
+</li>
+
+
+<li>
+
+<img src="fotos/cardapio/cafes/giancarlo-duarte-RtHw0PWCLhw-unsplash.jpg">
+
+Café Achocolatado
+
+<p>R$ 5,00</p>
+
+<button class="comprar" data-nome="Café Achocolatado" data-preco="5">
+Comprar
+</button>
+
+</li>
+
+
+<li>
+
+<img src="fotos/cardapio/cafes/wenhao-ruan-tPHZoqLkVw8-unsplash.jpg">
+
+Cappucino
+
+<p>R$ 4,50</p>
+
+<button class="comprar" data-nome="Cappucino" data-preco="4.5">
+Comprar
+</button>
+
+</li>
+
+</ul>
+
+
+
+<h1>Lanches</h1>
+
+<ul>
+
+<li>
+
+<img src="fotos/cardapio/lanches/jonathan-greenaway-jm86nvm6JkY-unsplash.jpg">
+
+Croissant
+
+<p>R$ 6,00</p>
+
+<button class="comprar" data-nome="Croissant" data-preco="6">
+Comprar
+</button>
+
+</li>
+
+
+<li>
+
+<img src="fotos/cardapio/lanches/yoga-sukma-n05PdIqcJ-8-unsplash.jpg">
+
+Pão de Queijo
+
+<p>R$ 3,00</p>
+
+<button class="comprar" data-nome="Pão de Queijo" data-preco="3">
+Comprar
+</button>
+
+</li>
+
+
+<li>
+
+<img src="fotos/cardapio/lanches/sanduiche-natural-de-frango-com-iogurte.jpg">
+
+Sanduíche Natural
+
+<p>R$ 8,00</p>
+
+<button class="comprar" data-nome="Sanduíche Natural" data-preco="8">
+Comprar
+</button>
+
+</li>
+
+
+<li>
+
+<img src="fotos/cardapio/lanches/klara-fulinova-OPNC1UUSGj4-unsplash.jpg">
+
+Salada de Frutas
+
+<p>R$ 7,00</p>
+
+<button class="comprar" data-nome="Salada de Frutas" data-preco="7">
+Comprar
+</button>
+
+</li>
+
+</ul>
+
+
+
+<h1>Sucos</h1>
+
+<ul>
+
+<li>
+
+<img src="fotos/cardapio/sucos/sandie-peters-tGrudeNNGSE-unsplash.jpg">
+
+Suco de Laranja
+
+<p>R$ 5,00</p>
+
+<button class="comprar" data-nome="Suco de Laranja" data-preco="5">
+Comprar
+</button>
+
+</li>
+
+
+<li>
+
+<img src="fotos/cardapio/sucos/yesmore-content-ywS7HzUNjuM-unsplash.jpg">
+
+Suco de Abacaxi
+
+<p>R$ 5,00</p>
+
+<button class="comprar" data-nome="Suco de Abacaxi" data-preco="5">
+Comprar
+</button>
+
+</li>
+
+
+<li>
+
+<img src="fotos/cardapio/sucos/boba-jaglicic-em8P_aV_fj8-unsplash.jpg">
+
+Suco de Morango
+
+<p>R$ 5,00</p>
+
+<button class="comprar" data-nome="Suco de Morango" data-preco="5">
+Comprar
+</button>
+
+</li>
+
+
+<li>
+
+<img src="fotos/cardapio/sucos/eugenia-pan-kiv-tCoqNUZLcDo-unsplash.jpg">
+
+Suco de Melancia
+
+<p>R$ 5,00</p>
+
+<button class="comprar" data-nome="Suco de Melancia" data-preco="5">
+Comprar
+</button>
+
+</li>
+
+</ul>
+
+
+
+<h1>Doces</h1>
+
+<ul>
+
+<li>
+
+<img src="fotos/cardapio/doces/imattsmart-bXZIlwRNpvE-unsplash.jpg">
+
+Brownie
+
+<p>R$ 8,00</p>
+
+<button class="comprar" data-nome="Brownie" data-preco="8">
+Comprar
+</button>
+
+</li>
+
+
+<li>
+
+<img src="fotos/cardapio/doces/66cd076719546d7e53c5f2a0dce2b638.jpg">
+
+Cookie
+
+<p>R$ 4,00</p>
+
+<button class="comprar" data-nome="Cookie" data-preco="4">
+Comprar
+</button>
+
+</li>
+
+
+<li>
+
+<img src="fotos/cardapio/doces/kalisha-ocheni-_BBTqanOrBI-unsplash.jpg">
+
+Cheesecake
+
+<p>R$ 6,00</p>
+
+<button class="comprar" data-nome="Cheesecake" data-preco="6">
+Comprar
+</button>
+
+</li>
+
+
+<li>
+
+<img src="fotos/cardapio/doces/1a884bcbc5b04d71476d2995d51d0140.jpg">
+
+Brigadeiro
+
+<p>R$ 1,00</p>
+
+<button class="comprar" data-nome="Brigadeiro" data-preco="1">
+Comprar
+</button>
+
+</li>
+
+</ul>
+
+</section>
+
+
+
+<footer>
+
+<p>&copy; 2026 Café Guilado. Todos os direitos reservados.</p>
+
+</footer>
+
+
+<script src="js/carrinho.js"></script>
+<script src="js/login.js"></script>
+
+</body>
+
+</html>

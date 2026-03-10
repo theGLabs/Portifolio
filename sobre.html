@@ -1,0 +1,234 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Café Guilado</title>
+
+<link rel="stylesheet" href="css/sobre.css">
+<link rel="stylesheet" href="css/login.css">
+
+<script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+
+<nav>
+
+<img src="fotos/logos/Logo do Café Guilado vintage (1).png" class="logo">
+
+<ul>
+<li><a href="index.html">Início</a></li>
+<li><a href="cardapio.html">Cardápio</a></li>
+<li><a href="sobre.html">Sobre</a></li>
+</ul>
+
+<div class="icons">
+
+<span id="login">
+<img src="fotos/download.svg" alt="usuário">
+</span>
+
+<div class="cart-icon">
+<span id="cart">
+<img src="fotos/bag.svg" alt="carrinho">
+</span>
+<span id="cart-count">0</span>
+</div>
+
+</div>
+
+</nav>
+
+
+
+<!-- LOGIN PANEL -->
+
+<div id="login-panel">
+
+<!-- LOGIN -->
+
+<div class="login-box" id="login-box">
+
+<button id="close-login">✕</button>
+
+<h2>Entrar</h2>
+
+<input type="email" placeholder="Email">
+<input type="password" placeholder="Senha">
+
+<div class="login-links">
+<button id="forgot-link">Esqueceu a senha?</button>
+<button id="signup-link">Criar conta</button>
+</div>
+
+<button class="login-btn">Entrar</button>
+
+</div>
+
+
+
+<!-- CRIAR CONTA -->
+
+<div id="signup-panel">
+
+<div class="login-box sub-box">
+
+<button class="close-signup">✕</button>
+
+<h2>Criar conta</h2>
+
+<input type="email" placeholder="Email">
+<input type="password" placeholder="Senha">
+<input type="password" placeholder="Confirmar senha">
+
+<button class="login-btn">Criar conta</button>
+
+<p class="back-login">
+Já tem conta? <span>Entrar</span>
+</p>
+
+</div>
+
+</div>
+
+
+
+<!-- RECUPERAR SENHA -->
+
+<div id="reset-panel">
+
+<div class="login-box sub-box">
+
+<button class="close-reset">✕</button>
+
+<h2>Recuperar senha</h2>
+
+<input type="email" placeholder="Digite seu email">
+
+<button class="login-btn">Enviar recuperação</button>
+
+<p class="back-login underline-all">
+Voltar para login
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+
+
+<!-- CARRINHO -->
+
+<div id="cart-panel">
+
+<div class="cart-header">
+<span>CARRINHO</span>
+<button id="close-cart">✕</button>
+</div>
+
+<div id="cart-items"></div>
+
+<div class="cart-total">
+Total: R$ <span id="total">0</span>
+</div>
+
+</div>
+
+
+
+<!-- SOBRE -->
+
+<section class="sobre-container">
+
+<div class="sobre">
+
+<img src="fotos/Exterior vintage do Café Guilado.png">
+
+<div class="texto">
+
+<h2>Nossa História</h2>
+
+<p>
+O Café Guilado nasceu em 1995 com o objetivo de criar um ambiente acolhedor para amantes de café.
+</p>
+
+<p>
+Desde então buscamos oferecer qualidade, conforto e um espaço perfeito para estudar, conversar ou simplesmente aproveitar uma boa xícara de café.
+</p>
+
+</div>
+
+</div>
+
+
+
+<div class="sobre invertido">
+
+<img src="fotos/iStock-1135359711-1.jpg">
+
+<div class="texto">
+
+<h2>Grãos Selecionados</h2>
+
+<p>
+Selecionamos cuidadosamente os melhores grãos para garantir aroma e sabor únicos em cada café servido.
+</p>
+
+<p>
+Nosso processo de preparo valoriza cada detalhe para proporcionar uma experiência especial aos nossos clientes.
+</p>
+
+</div>
+
+</div>
+
+
+
+<div class="sobre">
+
+<img src="fotos/shawn-nmpW_WwwVSc-unsplash.jpg">
+
+<div class="texto">
+
+<h2>Ambiente Acolhedor</h2>
+
+<p>
+Nosso espaço foi pensado para ser confortável e inspirador.
+</p>
+
+<p>
+Seja para estudar, trabalhar ou encontrar amigos, o Café Guilado é o lugar ideal para aproveitar bons momentos.
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<!-- FOOTER -->
+
+<footer>
+<p>&copy; 2026 Café Guilado. Todos os direitos reservados.</p>
+</footer>
+
+
+
+<!-- SCRIPTS -->
+
+<script src="js/carrinho.js"></script>
+<script src="js/login.js"></script>
+
+</body>
+</html>

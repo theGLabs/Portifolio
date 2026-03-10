@@ -1,0 +1,203 @@
+/* FUNDO DO LOGIN */
+
+#login-panel{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+height:100vh;
+background:rgba(0,0,0,0.6);
+display:none;
+align-items:center;
+justify-content:center;
+z-index:5000;
+backdrop-filter:blur(6px);
+}
+
+#login-panel.open{
+display:flex;
+}
+
+
+
+/* CAIXA */
+
+.login-box{
+background:white;
+padding:40px;
+border-radius:15px;
+width:320px;
+display:flex;
+flex-direction:column;
+gap:15px;
+position:relative;
+color:black;
+box-shadow:0 20px 40px rgba(0,0,0,0.4);
+animation:loginFade 0.4s ease;
+}
+
+
+
+/* ANIMAÇÃO */
+
+@keyframes loginFade{
+from{
+opacity:0;
+transform:translateY(-20px) scale(0.95);
+}
+to{
+opacity:1;
+transform:translateY(0) scale(1);
+}
+}
+
+
+
+/* TITULO */
+
+.login-box h2{
+text-align:center;
+}
+
+
+
+/* INPUTS */
+
+.login-box input{
+padding:10px;
+border-radius:8px;
+border:1px solid #ccc;
+font-size:14px;
+transition:0.2s;
+}
+
+.login-box input:focus{
+outline:none;
+border:1px solid #2f2e30;
+transform:scale(1.02);
+}
+
+
+
+/* LINKS */
+
+.login-links{
+display:flex;
+justify-content:space-between;
+font-size:13px;
+}
+
+.login-links button{
+background:none;
+border:none;
+cursor:pointer;
+color:#555;
+font-size:13px;
+}
+
+.login-links button:hover{
+text-decoration:underline;
+}
+
+
+
+/* BOTÃO PRINCIPAL */
+
+.login-btn{
+padding:10px;
+border:none;
+border-radius:20px;
+background:#2f2e30;
+color:white;
+cursor:pointer;
+font-size:14px;
+transition:0.2s;
+}
+
+.login-btn:hover{
+background:black;
+transform:scale(1.05);
+}
+
+
+
+/* BOTÃO X */
+
+#close-login,
+.close-signup,
+.close-reset{
+position:absolute;
+top:15px;
+right:20px;
+background:none;
+border:none;
+width:auto;
+height:auto;
+padding:0;
+margin:0;
+font-size:24px;
+cursor:pointer;
+color:#333;
+}
+
+#close-login:hover,
+.close-signup:hover,
+.close-reset:hover{
+background:none;
+color:red;
+transform:scale(1.2);
+transition:0.2s;
+}
+
+
+
+/* ESCONDER LOGIN QUANDO TROCA */
+
+.login-box.hidden{
+display:none;
+}
+
+
+
+/* PAINEIS */
+
+#signup-panel,
+#reset-panel{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+height:100vh;
+display:none;
+align-items:center;
+justify-content:center;
+z-index:5001;
+}
+
+#signup-panel.open,
+#reset-panel.open{
+display:flex;
+animation:loginFade 0.4s ease;
+}
+
+
+
+/* VOLTAR */
+
+.back-login{
+font-size:13px;
+text-align:center;
+cursor:pointer;
+color:#444;
+text-decoration:underline;
+}
+
+/* frase inteira sublinhada */
+.underline-all{
+text-decoration:underline;
+}
+
+/* só a palavra */
+.only-link{
+text-decoration:underline;
+}

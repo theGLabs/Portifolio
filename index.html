@@ -1,0 +1,188 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Café Guilado</title>
+
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/login.css">
+
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <nav>
+
+        <img src="fotos/logos/Logo do Café Guilado vintage (1).png" class="logo">
+
+        <ul>
+            <li><a href="index.html">Início</a></li>
+            <li><a href="cardapio.html">Cardápio</a></li>
+            <li><a href="sobre.html">Sobre</a></li>
+        </ul>
+
+        <div class="icons">
+
+            <span id="login">
+                <img src="fotos/download.svg" alt="usuário">
+            </span>
+
+            <div class="cart-icon">
+                <span id="cart">
+                    <img src="fotos/bag.svg" alt="carrinho">
+                </span>
+                <span id="cart-count">0</span>
+            </div>
+
+        </div>
+
+    </nav>
+
+
+    <!-- LOGIN PANEL -->
+    <div id="login-panel">
+
+        <!-- LOGIN -->
+        <div class="login-box" id="login-box">
+
+            <button id="close-login">✕</button>
+
+            <h2>Entrar</h2>
+
+            <input type="email" placeholder="Email">
+            <input type="password" placeholder="Senha">
+
+            <div class="login-links">
+                <button id="forgot-link">Esqueceu a senha?</button>
+                <button id="signup-link">Criar conta</button>
+            </div>
+
+            <button class="login-btn">Entrar</button>
+
+        </div>
+
+
+        <!-- CRIAR CONTA -->
+        <div id="signup-panel">
+
+            <div class="login-box sub-box">
+
+                <button class="close-signup">✕</button>
+
+                <h2>Criar conta</h2>
+
+                <input type="email" placeholder="Email">
+                <input type="password" placeholder="Senha">
+                <input type="password" placeholder="Confirmar senha">
+
+                <button class="login-btn">Criar conta</button>
+
+                <p class="back-login">Já tem conta? <span>Entrar</span></p>
+
+            </div>
+
+        </div>
+
+
+        <!-- RECUPERAR SENHA -->
+        <div id="reset-panel">
+
+            <div class="login-box sub-box">
+
+                <button class="close-reset">✕</button>
+
+                <h2>Recuperar senha</h2>
+
+                <input type="email" placeholder="Digite seu email">
+
+                <button class="login-btn">Enviar recuperação</button>
+
+                <p class="back-login">Voltar para <span>login</span></p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+    <!-- CARRINHO -->
+    <div id="cart-panel">
+
+        <div class="cart-header">
+            <span>CARRINHO</span>
+            <button id="close-cart">✕</button>
+        </div>
+
+        <div id="cart-items"></div>
+
+        <div class="cart-total">
+            Total: R$ <span id="total">0</span>
+        </div>
+
+    </div>
+
+
+
+    <!-- HOME -->
+    <section id="home">
+
+        <h1>Bem-vindo à nossa cafeteria!</h1>
+
+        <p>
+            Desfrute de um ambiente acolhedor e deliciosas opções de café e lanches.
+        </p>
+
+        <a href="#contato" class="scroll-indicator">
+            <span></span>
+            SCROLL
+        </a>
+
+    </section>
+
+
+
+    <!-- CONTATO -->
+    <section id="contato">
+
+        <h2>Entre em contato:</h2>
+
+        <p>E-mail: cafeguiladooficial@gmail.com</p>
+        <p>Telefone: (27) 9999-9999</p>
+
+        <ul id="redes">
+
+            <li class="facebook">
+                <a href="https://www.facebook.com" target="_blank">
+                    <img src="fotos/logos/2023_Facebook_icon.svg.png">
+                </a>
+            </li>
+
+            <li class="instagram">
+                <a href="https://www.instagram.com/" target="_blank">
+                    <img src="fotos/logos/icon-Instagram-redondo-colorido-removebg-preview.png">
+                </a>
+            </li>
+
+        </ul>
+
+    </section>
+
+
+
+    <!-- FOOTER -->
+    <footer>
+        <p>&copy; 2026 Café Guilado. Todos os direitos reservados.</p>
+    </footer>
+
+
+    <script src="js/carrinho.js"></script>
+    <script src="js/login.js"></script>
+
+</body>
+</html>
