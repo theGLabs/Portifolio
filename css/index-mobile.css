@@ -38,6 +38,10 @@
     font-size: 16px;
   }
 
+  #home {
+  padding-top: 120px;
+}
+
   /* CARRINHO */
   #cart-panel {
     width: 100%;
