@@ -1,6 +1,6 @@
 # ☕ Café Guilado
 
-🔗 Acesse o site: cafeteria-website-black.vercel.app
+🔗 Acesse o site: [cafeteria-website-black.vercel.app](https://cafeteria-website-black.vercel.app/)
 
 Site de uma cafeteria fictícia criado como projeto de estudo de **HTML, CSS e JavaScript**.
 
