@@ -1,6 +1,6 @@
 # ☕ Café Guilado
 
-🔗 Acesse o site: https://portifolio-seven-umber-70.vercel.app
+🔗 Acesse o site: cafeteria-website-black.vercel.app
 
 Site de uma cafeteria fictícia criado como projeto de estudo de **HTML, CSS e JavaScript**.
 
